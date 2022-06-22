@@ -1,0 +1,157 @@
+:root {
+  --main-background-color: #52616b;
+  --sub-background-color: #1e2022;
+  --text-color: #f0f5f9;
+  --secondary-color: #c9d6df;
+  --primart-font: "Montserrat";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-background-color);
+  font-family: var(--primart-font);
+  color: var(--text-color);
+}
+
+#main {
+  margin: 0 40px;
+}
+
+.heading {
+  margin: 20px auto;
+  background-color: var(--sub-background-color);
+  width: 70%;
+  max-width: 1500px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 var(--sub-background-color);
+}
+
+#title {
+  font-size: 3.5rem;
+  color: var(--secondary-color);
+}
+
+#img-div {
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--sub-background-color);
+  text-align: center;
+}
+
+#image {
+  box-shadow: 0 0 10px 0 var(--secondary-color);
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+caption {
+  margin: 10px auto 10px;
+}
+
+#info-div,
+#tribute-info,
+#tribute-link-div {
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 20px;
+  color: var(--sub-background-color);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.info {
+  color: var(--sub-background-color);
+  text-align: justify;
+}
+
+.tribute-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--sub-background-color);
+  margin-bottom: 20px;
+}
+
+.timeline {
+  text-align: justify;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.timeline li {
+  margin: 10px;
+}
+
+#tribute-link-div a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--sub-background-color);
+  transition: transform 0.4s;
+}
+
+#tribute-link-div a:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin: 0 5px;
+  }
+  .heading {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #title {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+  }
+
+  #img-div {
+    padding: 10px;
+  }
+
+  #image {
+    box-shadow: 0 0 10px 0 var(--secondary-color);
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  caption {
+    font-size: 0.8rem;
+  }
+
+  #info-div,
+  #tribute-info,
+  #tribute-link {
+    padding: 10px;
+  }
+}
